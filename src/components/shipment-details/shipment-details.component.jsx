@@ -17,7 +17,7 @@ const ShipmentDetails = ({ setModal }) => {
         >
             <div class="relative py-10 w-4/5 md:w-1/2 px-4 m-auto flex-col rounded-sm shadow-lg flex text-center bg-white border-solid" >
                <div className='flex flex-col text-left items-center space-y-6' >
-               <AiOutlineClose onClick={()=>setModal(null)} className='absolute top-0 right-0 m-4' />
+               <AiOutlineClose onClick={()=>setModal(null)} className='absolute top-0 right-0 m-4 cursor-pointer' />
                <span className='text-base md:text-lg ' >Your order is {status.toUpperCase()}</span>
                <span className='text-base md:text-lg' >Your order shipped from {shipped_from}</span>
                <span className='text-base md:text-lg' >Your order will be delivered at {destination}</span>
